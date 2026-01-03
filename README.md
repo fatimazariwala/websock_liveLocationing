@@ -207,8 +207,7 @@ pip install websockets aiomysql
 ### 3. Set Up MariaDB
 
 ```sql
-CREATE DATABASE <your_db_username>;
-USE <your_db_password>;
+CREATE DATABASE <your_db_name>;
 
 CREATE TABLE websock (
     joinkey VARCHAR(255) PRIMARY KEY
@@ -221,7 +220,7 @@ Configure `DB_CONFIG` with matching credentials.
     "host": "localhost",
     "user": "<your_db_username>",
     "password": "<your_db_password>",
-    "db": "kamailio"
+    "db": "<ypur_db_name>"
 }`
 
 
@@ -268,7 +267,7 @@ The server responds with a generated **room key**.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Python 3.x
 * asyncio
@@ -277,7 +276,7 @@ The server responds with a generated **room key**.
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 * Authentication and authorization
 * Redis-backed room persistence

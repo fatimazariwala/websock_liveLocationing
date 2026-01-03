@@ -20,10 +20,10 @@ from websockets.exceptions import ConnectionClosedOK, ConnectionClosedError
 
 DB_CONFIG = {
     "host": "localhost",   
-    "port": 3306,         
-    "user": "kamailio",  
-    "password": "kamailiorw", 
-    "db": "kamailio", 
+    "port": 3306,         #Default MariaDB port
+    "user": "<your_db_username>",  
+    "password": "<your_db_password>", 
+    "db": "<your_db_name>", 
 }
 
 
